@@ -14,7 +14,7 @@
             <div class="card-body px-lg-5 py-lg-5">
                 <div class="text-center text-muted mb-4">
                     <h4 style="font-family: 'dillova';text-transform: none;font-size: 36px;font-weight: normal;">
-                        evento..
+                        Stack-Hack
                     </h4>
                 </div>
                 <form role="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <p class="text-danger mb-0" *ngIf="isUnauthorized">Username or Password is incorrect</p>
+                        <p class="text-danger mb-0" *ngIf="isUnauthorized">Entered Username/Password Incorrect</p>
                         <button type="submit" class="btn btn-primary">Sign in</button>
                     </div>
                 </form>
