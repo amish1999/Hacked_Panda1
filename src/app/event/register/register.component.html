@@ -15,7 +15,7 @@
                 <div class="col-lg-8">
                     <div class="card bg-gradient-secondary shadow">
                         <div class="card-body p-lg-5">
-                            <h4 class="mb-1">Register your event.</h4>
+                            <h4 class="mb-1">Register event here -</h4>
                             <form [formGroup]="eventForm" (ngSubmit)="onPreview()">
                                 <div class="form-group mt-5"
                                     [ngClass]="{'has-danger':isSubmited && eventForm.controls.name.errors}">
@@ -70,7 +70,7 @@
                                                     <option value="Self" selected>Self</option>
                                                     <option value="Group">Group</option>
                                                     <option value="Corporate">Corporate</option>
-                                                    <option value="Others">Others</option>
+                                                    <option value="Others">Other</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -107,7 +107,7 @@
     <ng-template #previewModal let-c="close" let-d="dismiss">
         <div class="modal-content bg-gradient-danger">
             <div class="modal-header">
-                <h6 class="modal-title" id="modal-title-notification">Preiview</h6>
+                <h6 class="modal-title" id="modal-title-notification">Preview</h6>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -129,13 +129,13 @@
     <ng-template #registrationModal let-c="close" let-d="dismiss">
         <div class="modal-content bg-gradient-danger">
             <div class="modal-header">
-                <h6 class="modal-title" id="modal-title-notification">Event Registered Success</h6>
+                <h6 class="modal-title" id="modal-title-notification">Event Registration Success</h6>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="close(registrationModal)">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
             <div class="modal-body">
-                Here is your registration number <b>{{registrationNumber}}</b>
+                Your registration number :<b>{{registrationNumber}}</b>
             </div>
         </div>
     </ng-template>
